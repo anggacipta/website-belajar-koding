@@ -26,7 +26,7 @@
             @foreach($submenu as $sub)
             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mx-2 my-2">
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset($sub->submenu_img) }}" class="card-img-top" alt="...">
+                        <img src="{{ asset($sub->submenu_img) }}" class="card-img-top" alt="..." style="object-fit: contain">
                         <div class="card-body">
                             <h5 class="card-title">{{ $sub->nama_submenu }}</h5>
                             <p class="card-text">{{ $sub->summary }}</p>
