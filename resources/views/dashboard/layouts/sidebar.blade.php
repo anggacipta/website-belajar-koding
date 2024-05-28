@@ -121,10 +121,10 @@
                     <div class="collapse" id="sidebarEmail2">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="{{ route('questions') }}">Table Questions</a>
+                                <a href="{{ route('posts') }}">Table Questions</a>
                             </li>
                             <li>
-                                <a href="{{ route('tambah.questions') }}">Tambah Questions</a>
+                                <a href="{{ route('tambah.posts') }}">Tambah Questions</a>
                             </li>
                         </ul>
                     </div>
