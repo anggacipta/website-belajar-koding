@@ -112,23 +112,6 @@
                     </div>
                 </li>
 
-                <li>
-                    <a href="#sidebarEmail2" data-bs-toggle="collapse">
-                        <i class="mdi mdi-lamps"></i>
-                        <span> Questions </span>
-                        <span class="menu-arrow"></span>
-                    </a>
-                    <div class="collapse" id="sidebarEmail2">
-                        <ul class="nav-second-level">
-                            <li>
-                                <a href="{{ route('posts') }}">Table Questions</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('tambah.posts') }}">Tambah Questions</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
 
             </ul>
 
