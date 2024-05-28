@@ -1,0 +1,26 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Question;
+use App\Models\Answer;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class QuestionSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        Question::factory()
+            ->count(50)
+            ->create()
+            ->each(function ($question) {
+                Answer::factory()
+                    ->count(3)
+                    ->create(['question_id' => $question->id]);
+            });
+    }
+}
